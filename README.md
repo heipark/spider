@@ -4,12 +4,14 @@ spider
 install
 =======
 pip install beautifulsoup4
+
 pip install html5lib	
 
 
 参考资料
 =======
 无验证码：http://zoulc001.iteye.com/blog/1186962
+
 有验证码：https://github.com/piglei/tieba_poster/blob/master/baidu_poster.py
 	
 
