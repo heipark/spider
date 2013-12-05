@@ -13,7 +13,7 @@ def getContent(borrow_id):
     opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
     opener.addheaders = [('User-agent', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)'), ('Cookie', cookie)] 
     html = opener.open(borrow_id).read()
-    if html.find('验证码') >=0 :
+    if html.find('同意使用 协议') >=0 :
         print 'bad cookie value.'
         sys.exit()
     return html

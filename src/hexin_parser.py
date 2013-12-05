@@ -33,6 +33,7 @@ def parse(content):
     print '奖励：%s' % (soup.find('li', text=re.compile(u"奖励")).string.replace('投资奖励：', '').strip())
     print '借款期限：%s' % (soup.find('li', text=re.compile(u"借款期限")).string.replace('借款期限：', '').strip())
     print '投标数量：%s' % (soup.find('li', text=re.compile(u"投标数量")).string.replace('投标数量：', '').strip())
+    print '还款方式：%s' % (soup.find('li', text=re.compile(u"还款方式")).string.replace('还款方式：', '').strip())
 
     is_miao = soup.find('img', src='/themes/soonmes_hexindai/images/miao.gif')
     if is_miao != None:
